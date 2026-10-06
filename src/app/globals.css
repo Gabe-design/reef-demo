@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+/*
+  Reef brand tokens. Navy and sky are sampled from the supplied logo
+  (navy #032541, sky #50B1DE). Sky on white is ~2.4:1, so it is an accent
+  colour only; text and controls use navy or sky-700 (4.8:1 on white).
+
+  Shape rule: cards/panels rounded-2xl (16px), inputs rounded-xl (12px),
+  buttons and pills fully rounded.
+*/
+@theme {
+  --color-navy-950: #01182b;
+  --color-navy-900: #032541;
+  --color-navy-800: #0a3357;
+  --color-navy-700: #14466f;
+  --color-navy-600: #215b88;
+  --color-navy-100: #dfe8f1;
+  --color-navy-50: #eff4f9;
+
+  --color-sky-700: #1e7aa6;
+  --color-sky-600: #2f95c5;
+  --color-sky-500: #50b1de;
+  --color-sky-300: #9fd3ec;
+  --color-sky-100: #dcf0fa;
+  --color-sky-50: #eff8fd;
+
+  --color-ink: #0b1b2b;
+  --color-muted: #4b5e71;
+  --color-subtle: #7a8a9a;
+  --color-line: #dfe6ee;
+  --color-canvas: #f5f8fb;
+  --color-paper: #fdfeff;
+
+  --color-ok: #0f8a5f;
+  --color-ok-bg: #e3f5ed;
+  --color-warn: #a35f00;
+  --color-warn-bg: #fdf1dc;
+  --color-bad: #b42318;
+  --color-bad-bg: #fde8e6;
+
+  --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --shadow-soft: 0 1px 2px rgb(3 37 65 / 0.06), 0 8px 24px -12px rgb(3 37 65 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(3 37 65 / 0.06), 0 24px 48px -20px rgb(3 37 65 / 0.35);
+
+  --animate-rise: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-toast: toast 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes toast {
+  from { opacity: 0; transform: translateY(-12px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-sky-600);
+  outline-offset: 2px;
+}
+
+/* MapLibre controls sit on top of our UI tokens */
+.maplibregl-ctrl-attrib {
+  font-size: 10px;
+}
+
+/* Sample "before" shots reuse the after photo with a dulled, filmy look. */
+.photo-before {
+  filter: sepia(0.38) saturate(0.65) contrast(0.82) brightness(0.9) blur(0.6px);
+}
