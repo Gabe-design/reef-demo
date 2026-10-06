@@ -6,7 +6,7 @@ The demo shows what the finished site and platform would look like. Anything bel
 
 | Where | Draft | Needs from Reef |
 | --- | --- | --- |
-| Header, footer, CTA | Phone `(619) 555-0100` (a fictional 555 number) | Real business number |
+| Header, footer, CTA | Phone `(805) 368-0990` | Confirmed by Gabe 2026-10-06 |
 | Footer | Hours "Mon-Sat, 7 AM - 6 PM", "San Diego County, CA" | Real hours and service region wording |
 | Home marquee, Service area page | Pacific Beach, La Jolla, Bird Rock, Clairemont, University City, Point Loma, Mission Hills, North Park, Coronado, Del Mar, Encinitas, Carlsbad | Actual service area |
 | Services page | Methods: pure-water pole for second stories, drop cloths and shoe covers, hard-water test spot, roof-access logging | Confirm Reef actually works this way |

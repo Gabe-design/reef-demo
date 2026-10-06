@@ -101,7 +101,7 @@ export const EMPLOYEES: Employee[] = [
     name: "Reef Owner",
     role: "owner",
     title: "Owner / CEO",
-    phone: "(619) 555-0100",
+    phone: "(805) 368-0990",
     email: "owner@reefwindowcleaning.example",
     color: "#032541",
     startDate: "2025-01-06",

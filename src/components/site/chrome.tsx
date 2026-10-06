@@ -10,8 +10,8 @@ import { List, Phone, UserCircle, X } from "@phosphor-icons/react";
 import { useSession } from "@/lib/demo/session";
 import { useMe } from "@/lib/demo/hooks";
 
-export const REEF_PHONE = "(619) 555-0100";
-export const REEF_PHONE_HREF = "tel:+16195550100";
+export const REEF_PHONE = "(805) 368-0990";
+export const REEF_PHONE_HREF = "tel:+18053680990";
 
 const NAV = [
   { href: "/services/", label: "Services" },
