@@ -1,0 +1,13 @@
+// Cloudflare Workers config: serve the Next.js static export as plain assets.
+// Without this file, `wrangler deploy` auto-detects Next.js and tries an
+// OpenNext server build, which a static export can't produce.
+{
+  "name": "reef-demo",
+  "compatibility_date": "2026-10-06",
+  "assets": {
+    "directory": "./out",
+    // trailingSlash: true in next.config.ts -> /admin/ serves admin/index.html
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
